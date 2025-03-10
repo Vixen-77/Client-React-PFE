@@ -29,19 +29,19 @@ const LoginPage = () => {
             isSignUp ? "-translate-x-full rounded-l-[150px]" : ""
           }`}
         >
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-red-600 to-red-800 text-white">
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-[#F05050] to-[#D32F2F] text-white">
             <div className="text-center">
-              <h1 className="text-2xl font-bold">
+              <h1 className="text-2xl font-bold" style={{ color: "#FFFAF0" }}>
                 {isSignUp ? "Hello, Friend!" : "Welcome Back!"}
               </h1>
-              <p className="mt-2 text-sm">
+              <p className="mt-2 text-sm" style={{ color: "#FFFAF0" }}>
                 {isSignUp
                   ? "Register with your details to access all features."
                   : "Enter your details to use all site features."}
               </p>
               <button
                 onClick={() => setIsSignUp(!isSignUp)}
-                className="mt-4 px-6 py-2 border border-white rounded-md text-white uppercase text-xs hover:bg-white hover:text-red-600 transition"
+                className="mt-4 px-6 py-2 border border-white rounded-md text-white uppercase text-xs hover:bg-white hover:text-[#F05050] transition"
               >
                 {isSignUp ? "Sign In" : "Sign Up"}
               </button>
@@ -56,7 +56,7 @@ const LoginPage = () => {
 // Form Component
 const Form = ({ type }) => {
   const [formData, setFormData] = useState({
-    accounttype:"",
+    accounttype: "",
     name: "",
     email: "",
     password: "",
@@ -94,14 +94,16 @@ const Form = ({ type }) => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col items-center justify-center h-full p-10">
-      <h1 className="text-2xl font-bold">{type === "signup" ? "Create Account" : "Sign In"}</h1>
+      <h1 className="text-2xl font-bold" style={{ color: "#F05050" }}>
+        {type === "signup" ? "Create Account" : "Sign In"}
+      </h1>
       <div className="flex gap-3 mt-4">
         <SocialIcon icon="fa-google-plus-g" />
         <SocialIcon icon="fa-facebook-f" />
         <SocialIcon icon="fa-github" />
         <SocialIcon icon="fa-linkedin-in" />
       </div>
-      <span className="text-xs mt-2">
+      <span className="text-xs mt-2" style={{ color: "#FFFAF0" }}>
         {type === "signup" ? "or use your email for registration" : "or use your email password"}
       </span>
       {type === "signup" && (
