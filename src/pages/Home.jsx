@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6 text-center">
-      <h1 className="text-4xl font-bold text-gray-800">Bienvenue sur notre plateforme</h1>
+    <div className="flex flex-col items-center justify-center w-[100%] min-h-screen bg-gray-100 p-6 text-center">
+      <h1 className="text-4xl font-bold text-gray-800">
+        Bienvenue sur notre plateforme
+      </h1>
       <p className="mt-4 text-lg text-gray-600 max-w-2xl">
-        Une solution innovante pour la gestion et le suivi des données médicales en toute sécurité.
-        Accédez facilement à vos informations et interagissez avec notre système intelligent.
+        Une solution innovante pour la gestion et le suivi des données médicales
+        en toute sécurité. Accédez facilement à vos informations et interagissez
+        avec notre système intelligent.
       </p>
       <img
-        src="" 
+        src=""
         alt="Présentation de la plateforme"
         className="mt-6 w-full max-w-lg rounded-lg shadow-lg"
       />
@@ -24,55 +27,6 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
